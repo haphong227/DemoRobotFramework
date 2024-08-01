@@ -39,3 +39,13 @@ Invalid login
     Sleep    1s
 #   Click button Login
     Click Button    xpath=//button[@type='submit']
+
+Get value from element
+    [Documentation]     Print text of element
+    ${value}  Get Text     xpath=//p[@class='oxd-text oxd-text--p'][1]
+    Log To Console    ${value}
+    Sleep    1s
+
+
+
+
